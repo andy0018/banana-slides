@@ -95,53 +95,33 @@
 
 ## 🎯 功能介绍
 
-### Banana-slides🍌 (aka. 蕉幻) 的亮点
+### 1. 灵活多样的创作路径
+支持**想法**、**大纲**、**页面描述**三种起步方式，满足不同创作习惯。
+- **一句话生成**：输入一个主题，AI 自动生成结构清晰的大纲和逐页内容描述。
+- **自然语言编辑**：支持以 Vibe 形式口头修改大纲或描述（如"把第三页改成案例分析"），AI 实时响应调整。
+- **大纲/描述模式**：既可一键批量生成，也可手动调整细节。
 
-- 🚀 **一句话生成 PPT**：从一个简单的想法快速得到大纲、页面描述和最终的 PPT 文稿
-- 🔄 **三种生成路径**：支持从「想法 / 大纲 / 页面描述」三种方式起步，适配不同创作习惯
-- 🧙‍♀️ **AI 辅助编排**：由 LLM 生成结构清晰的大纲和逐页内容描述
-<img width="1380" height="684" alt="image" src="https://github.com/user-attachments/assets/a76cbc57-b688-42e4-bc3a-a75ad3c505f4" />
+<img width="1380" height="684" alt="大纲编辑与生成" src="https://github.com/user-attachments/assets/a76cbc57-b688-42e4-bc3a-a75ad3c505f4" />
 
-- 🔍 **文本与链接自动提取**：支持从一段文本中自动抽取要点、图片链接等信息
-- 🔗 **文件上传自动解析**: 支持导入docx/pdf/md/txt等格式的文件，后台自动解析，为图片内容生成描述，为后续生成提供素材。
-- 🧾 **上传任意素材**：可上传参考风格图片、示例 PPT模板图片 等作为风格和内容参考
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8cda1fd2-2369-4028-b310-ea6604183936" />
+### 2. 强大的素材解析能力
+- **多格式支持**：上传 PDF/Docx/MD/Txt 等文件，后台自动解析内容。
+- **智能提取**：自动识别文本中的关键点、图片链接和图表信息，为生成提供丰富素材。
+- **风格参考**：支持上传参考图片或模板，定制 PPT 风格。
 
+<img width="1920" height="1080" alt="文件解析与素材处理" src="https://github.com/user-attachments/assets/8cda1fd2-2369-4028-b310-ea6604183936" />
 
-- 🖼️ **高质量页面生成**：基于 nano banana pro🍌 生成高清、风格统一的页面设计
-- 🗣️ **自然语言修改**：支持对单页、单页局部（已支持）或整套（未来支持）PPT 进行「口头」式自然语言修改与重生成
-<img width="1920" height="1141" alt="image" src="https://github.com/user-attachments/assets/0639038a-a06f-445f-8883-896e882f60e9" />
+### 3. "Vibe" 式自然语言修改
+不再受限于复杂的菜单按钮，直接通过**自然语言**下达修改指令。
+- **局部重绘**：对不满意的区域进行口头式修改（如"把这个图换成饼图"）。
+- **整页优化**：基于 nano banana pro🍌 生成高清、风格统一的页面。
 
-  
-- 📊 **一键导出**：自动组合为 PPTX / PDF，16:9 比例，开箱即用
-<img width="1748" height="538" alt="image" src="https://github.com/user-attachments/assets/647eb9b1-d0b6-42cb-a898-378ebe06c984" />
+<img width="1920" height="1141" alt="自然语言修改示例" src="https://github.com/user-attachments/assets/0639038a-a06f-445f-8883-896e882f60e9" />
 
-### 1. 多种创建方式
-- **从构想生成**：输入一句话 / 一段想法，自动生成完整大纲和页面内容
-- **从大纲生成**：粘贴已有大纲，AI 帮你扩展为逐页详细描述
-- **从描述生成**：直接提供每页描述，快速生成成品页面图片
+### 4. 开箱即用的格式导出
+- **多格式支持**：一键导出标准 **PPTX** 或 **PDF** 文件。
+- **完美适配**：默认 16:9 比例，排版无需二次调整，直接演示。
 
-### 2. 智能大纲与页面描述生成
-- 根据用户输入主题自动生成 PPT 大纲与整套页面结构
-- 以卡片形式呈现，支持删除、拖拽、调整顺序
-- 既可以一次性批量生成，也可以单个编辑逐步补充和细化
-- 内置并行处理能力，提升多页生成速度
-
-### 3. 多格式文件自动智能解析
-- 支持上传pdf/doc/docx/md/txt等格式文件
-- 使用mineru+多模态llm并行解析文件文字+图片并进行分离，为后续生成提供文本、图表素材。
-
-### 4. 文本与素材理解
-
-- 支持对输入文本进行关键点抽取、结构化整理
-- 自动识别并提取其中的图片、（markdown图片）链接等资源
-- 支持上传参考图片、截图、旧 PPT 作为风格与内容线索
-
-### 5. 多格式导出
-- **PPTX 导出**：标准 PowerPoint 格式
-- **PDF 导出**：适合快速分享和展示
-- 默认 16:9 比例，保证在主流显示设备上的观感
-
+<img width="1748" height="538" alt="PPT与PDF导出" src="https://github.com/user-attachments/assets/647eb9b1-d0b6-42cb-a898-378ebe06c984" />
 
 ## 📦 使用方法
 
@@ -386,14 +366,14 @@ banana-slides/
 │   │   ├── material.py         # Material模型（参考素材）
 │   │   ├── user_template.py    # UserTemplate模型（用户模板）
 │   │   ├── reference_file.py   # ReferenceFile模型（参考文件）
-│   │   └── page_image_version.py # PageImageVersion模型（页面版本）
+│   │   ├── page_image_version.py # PageImageVersion模型（页面版本）
 │   ├── services/               # 服务层
 │   │   ├── ai_service.py       # AI生成服务（Gemini集成）
 │   │   ├── file_service.py     # 文件管理服务
 │   │   ├── file_parser_service.py # 文件解析服务
 │   │   ├── export_service.py   # PPTX/PDF导出服务
 │   │   ├── task_manager.py     # 异步任务管理
-│   │   └── prompts.py          # AI提示词模板
+│   │   ├── prompts.py          # AI提示词模板
 │   ├── controllers/            # API控制器
 │   │   ├── project_controller.py      # 项目管理
 │   │   ├── page_controller.py         # 页面管理
@@ -453,5 +433,3 @@ MIT
 </a>
 
 <br>
-
-
