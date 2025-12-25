@@ -289,7 +289,7 @@ test.describe('UI-driven E2E test: From user interface to PPT export', () => {
     if (!clickSucceeded || urlAfterFirstAttempt === urlBeforeClick) {
       console.log('  Navigation did not start, using JavaScript to trigger navigation...')
       // Extract project ID from current URL
-      const match = urlBeforeClick.match(/\/project\/([^\/]+)\//)
+      const match = urlBeforeClick.match(/\/project\/([^/]+)\//)
       if (match) {
         const projectId = match[1]
         const targetUrl = `http://localhost:3000/project/${projectId}/preview`
