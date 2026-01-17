@@ -65,7 +65,8 @@ class GenAITextProvider(TextProvider):
     
     @retry(
         stop=stop_after_attempt(get_config().GENAI_MAX_RETRIES + 1),
-        wait=wait_exponential(multiplier=1, min=2, max=10)
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        reraise=True
     )
     def generate_text(self, prompt: str, thinking_budget: int = 0) -> str:
         """
@@ -92,7 +93,8 @@ class GenAITextProvider(TextProvider):
     
     @retry(
         stop=stop_after_attempt(get_config().GENAI_MAX_RETRIES + 1),
-        wait=wait_exponential(multiplier=1, min=2, max=10)
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        reraise=True
     )
     def generate_with_image(self, prompt: str, image_path: str, thinking_budget: int = 0) -> str:
         """

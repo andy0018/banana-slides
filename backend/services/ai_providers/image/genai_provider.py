@@ -68,7 +68,8 @@ class GenAIImageProvider(ImageProvider):
 
     @retry(
         stop=stop_after_attempt(get_config().GENAI_MAX_RETRIES + 1),
-        wait=wait_exponential(multiplier=1, min=2, max=10)
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        reraise=True
     )
     def generate_image(
         self,
